@@ -1,4 +1,4 @@
-import app  from  './app'
-import routes  from  './routes'
+import app from "./app";
+import routes from "./routes";
 
-app.listen(3003)
+app.listen(3003);

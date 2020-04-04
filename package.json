@@ -8,6 +8,7 @@
     "dev:debug": "nodemon --inspect src/server.js"
   },
   "dependencies": {
+    "bcrypt": "^4.0.1",
     "express": "4.17.*",
     "pg": "^8.0.0",
     "pg-hstore": "^2.3.3",

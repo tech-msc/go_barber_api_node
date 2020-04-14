@@ -36,7 +36,8 @@ module.exports = {
       },
 
       canceled_at: {
-        type: Sequelize.DATE
+        type: Sequelize.DATE,
+        allowNull: true
       },
 
       created_at: {
@@ -52,7 +53,7 @@ module.exports = {
     })
   },
 
-  down: (queryInterface, Sequelize) => {
+  down: (queryInterface) => {
     return queryInterface.dropTable('appointments')
   }
 }

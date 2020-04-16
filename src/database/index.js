@@ -23,8 +23,15 @@ class Database {
 
   mongo () {
     this.mongoConnection = mongoose.connect(
-      'mongodb://localhost:27017/gobarber',
-      { useNewUrlParser: true, useFindAndModify: true }
+      // 'mongodb://localhost:27017/gobarber',
+      'mongodb+srv://root:root@cluster0-odjrb.mongodb.net/test?retryWrites=true&w=majority'
+      ,
+      {
+        useNewUrlParser: true,
+        useFindAndModify: true
+        // useUnifiedTopology: true
+      }
+
     )
   }
 }
